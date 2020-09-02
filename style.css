@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+.body{
+    font-family: 'Oswald', sans-serif;
+}
+
+#header{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+#header .caption {
+    margin-top: 7rem;
+}
+#icons .features h3::after{
+    content:'';
+    width: 3rem;
+    background-color: teal;
+    display: block;
+    height: 0.1rem;
+    border-radius: 20px;
+    margin: 5px auto 20px auto;
+}
+#icons .features:hover h3::after{
+    width: 8rem;
+    transition: all 0.3s ease;
+}
+#icons .features p{
+    opacity: 0;
+    padding-top: 30px;
+} 
+#icons .features:hover p {
+    opacity: 1;
+    padding-top: 5px;
+    transition: all .3s ease;
+}
+#category .logo{
+    background-image: url(../img/service_1.png);
+}
+#category .social-media{
+    background-image: url(../img/service_2.png);
+}
+#category .audio{
+    background-image: url(../img/service_3.png);
+}
+#category .translate{
+    background-image: url(../img/service_4.png);
+}
+#category .word-press{
+    background-image: url(../img/service_5.png);
+}
+#category .description{
+    background-size: cover;
+    height: 20rem;
+}
+#catagory .description p{
+    font-size: 0.9rem;  
+}
+#category .description span{
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+}
+#category .row>div {
+    flex: 0 0 calc(50% - 1rem);
+    margin-top: 1rem;
+}
+@media(min-width: 992px){
+#category .row>div {
+    flex: 0 0 calc(20% - 1rem);
+}
+}
